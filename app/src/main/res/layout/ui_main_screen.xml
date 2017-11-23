@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/6/16 8:43 AM
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragcontent"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.strategy.intecom.vtc.vigo.MainScreen">
+
+    <ListView
+        android:id="@+id/lst_main_travel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <EditText
+        style="@style/CusEditTextTheme"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="@dimen/confirm_ui_padding_h"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+        android:layout_marginRight="@dimen/confirm_ui_padding_h"
+        android:layout_marginStart="@dimen/confirm_ui_padding_h"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@drawable/border_search"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:gravity="center"
+        android:hint="@string/title_search_location"
+        android:paddingBottom="3dp"
+        android:paddingEnd="@dimen/confirm_ui_padding_w"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w"
+        android:paddingStart="@dimen/confirm_ui_padding_w"
+        android:paddingTop="3dp"
+        android:textSize="@dimen/size_text_app_content" />
+
+</RelativeLayout>

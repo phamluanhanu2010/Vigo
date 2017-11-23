@@ -1,0 +1,79 @@
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/21/16 4:24 PM
+  -->
+
+<resources>
+    <string name="app_name">VIGO</string>
+
+    <string name="navigation_drawer_open">Mở Menu</string>
+    <string name="navigation_drawer_close">Đóng Menu</string>
+
+    <string name="nav_item_notifi">Cài đặt</string>
+
+    <string name="title_main_travel_hanoi">Hà Nội</string>
+    <string name="title_main_travel_hoian">Hội An</string>
+    <string name="title_main_travel_danang">Đà Nẵng</string>
+    <string name="title_main_travel_quangbinh">Quảng Bình</string>
+    <string name="title_main_travel_nhatrang">Nha Trang</string>
+
+    <string name="confirm_server_not_found">Không thể kết nối tới Server</string>
+    <string name="confirm_server_timeout">Không có phản hồi từ Server</string>
+    <string name="confirm_server_error_connect">Lỗi kết nối</string>
+    <string name="network_not_enabled">Xin vui lòng kiểm tra kết nối Wifi/3G để có được những thông tin về công việc một cách chính xác!</string>
+    <string name="gps_not_enabled">Xin vui lòng bật định vị GPS để có được những thông tin về địa điểm một cách chính xác!</string>
+    <string name="open_location_settings">Bật GPS</string>
+    <string name="open_network_settings">Bật Wifi/3G</string>
+    <string name="btn_new_job_cancel">Từ chối</string>
+    <string name="btn_huy">Hủy</string>
+    <string name="btn_accept">Đồng ý</string>
+    <string name="btn_datdiachi">Đặt địa chỉ</string>>
+    <string name="btn_buy_now">Buy Now</string>>
+    <string name="btn_audio_trial">Trial audio</string>
+    <string name="btn_audio_preview">Preview</string>
+    <string name="btn_audio_play">Play</string>
+    <string name="btn_audio_playing">Playing</string>
+
+    <string name="title_audio_full_intro">Full Introduction</string>
+    <string name="title_architecture_minimize">Minimize</string>
+    <string name="title_architecture_read_all">Read All</string>
+    <string name="title_architecture_Audio">Audio </string>
+    <string name="title_architecture_out_of"> out of </string>
+
+    <string name="title_in_travel_1">Heritage Attractions</string>
+    <string name="title_view_more">View All</string>
+    <string name="title_read_more">Read All</string>
+
+    <string name="title_detail_guide">Detail Guide</string>
+
+    <string name="title_audio_length">Audio length %1$s</string>
+
+    <string name="title_detail_guide_count_sound">%1$s recordings (total %2$s mins) &amp; %3$s articles</string>
+    <string name="title_detail_guide_price_content">%1$s mins of audio &amp; exclusive articles</string>
+
+    <string name="title_architecture_details_download_title">download all contents</string>
+
+    <string name="title_from_day">Từ ngày</string>
+    <string name="title_to_day">Đến ngày</string>
+
+    <string name="title_search">Search</string>
+    <string name="title_search_location">Search for location</string>
+    <string name="title_my_location">Địa điểm của tôi</string>
+
+    <string name="title_dialog_choice">Lựa chọn</string>
+    <string name="title_dialog_message">Thông báo</string>
+    <string name="title_dialog_confirm">Xác nhận</string>
+    <string name="title_dialog_process_confirm">Đang xử lý…</string>
+
+    <string name="title_dialog_choice_library">Chọn trong thư viện</string>
+    <string name="title_dialog_choice_capture">Chụp ảnh</string>
+
+    <string name="title_currency">%1$s</string>
+    <string name="title_currency_usd">USD %1$s</string>
+
+    <string name="title_architecture_speed">Speed</string>
+    <string name="title_architecture_article_view">View article</string>
+    <string name="title_architecture_shrink">Shrink</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 9/26/16 1:05 PM
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/size_image_view_page"
+    android:layout_height="@dimen/size_image_view_page"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/background_border_while"-->
+    <!--android:orientation="vertical">-->
+
+    <!--android:padding="@dimen/footer_icon_mar_top"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/img_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/txt_count_view"
+            style="@style/CusTextViewContentTheme"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/confirm_ui_padding_w"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_border_bottom_while"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/CusTextViewContentTheme"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="dfksdjfklskf"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/size_text_app_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w">
+
+            <TextView
+                android:id="@+id/txt_price"
+                style="@style/CusTextViewContentTheme"
+                android:text="dfsdjflsf"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/size_text_app_content" />
+
+            <CheckBox
+                android:id="@+id/cb_check_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/ratingbar"
+                android:checked="true"/>
+
+            <TextView
+                android:id="@+id/txt_address"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="dfsdjflsf"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/size_text_app_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--</LinearLayout>-->
+</LinearLayout>

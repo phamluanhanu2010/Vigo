@@ -1,0 +1,89 @@
+/*
+ * Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+ * Copyright © 2016, All Rights Reserved.
+ *
+ * Last modified 10/31/16 11:31 AM
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.strategy.intecom.vtc.vigo";
+        minSdkVersion 14
+        targetSdkVersion 23           //targetSdkVersion Build 22
+        versionCode 1
+        versionName "1.0.1"
+        multiDexEnabled = true
+    }
+
+    sourceSets {
+        main {
+            assets.srcDir("assets")
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            resValue "color", "color_app", "#FFCB08"
+            resValue "color", "color_app_light_1", "#11FFCB08"
+            resValue "color", "color_app_light_5", "#55FFCB08"
+            resValue "color", "color_app_light_9", "#99FFCB08"
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            resValue "color", "color_app",  "#2A6FED"
+            resValue "color", "color_app_light_1", "#112A6FED"
+            resValue "color", "color_app_light_5", "#552A6FED"
+            resValue "color", "color_app_light_9", "#992A6FED"
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+//    maven { url "https://jitpack.io" }
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:19.1.0'
+
+    // Service Google
+    compile 'com.google.android.gms:play-services:7.8.0'
+
+    compile 'com.android.support:design:23.3.0'
+
+    compile 'com.android.support:multidex:1.0.0'
+
+    // Thư viện hiển thị ảnh và video
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+
+    // Thư viện View Paging cho thư viện ảnh
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+}

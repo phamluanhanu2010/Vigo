@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 6/20/16 8:52 AM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"
+        android:state_window_focused="true"
+        android:drawable="@mipmap/ic_star_off" />
+
+    <item android:state_focused="true"
+        android:state_window_focused="true"
+        android:drawable="@mipmap/ic_star_off" />
+
+    <item android:state_selected="true"
+        android:state_window_focused="true"
+        android:drawable="@mipmap/ic_star_off" />
+
+    <item android:drawable="@mipmap/ic_star_off" />
+
+</selector>

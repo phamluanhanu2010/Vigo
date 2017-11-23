@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/2/16 11:16 AM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 8/22/16 12:39 PM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:drawable="@mipmap/ic_action_toggle_star_outline" android:state_checked="false"/>
+    <item android:drawable="@mipmap/ic_action_toggle_star" android:state_checked="true"/>
+    <item android:drawable="@mipmap/ic_action_toggle_star"/>
+
+</selector>

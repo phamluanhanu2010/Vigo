@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 6/28/16 10:24 AM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:color="?android:colorControlNormal" tools:targetApi="lollipop">
+
+    <item android:id="@android:id/mask" android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+
+            <solid android:color="@color/color_transparent_99" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/color_transparent_55" />
+        </shape>
+    </item>
+
+</selector>

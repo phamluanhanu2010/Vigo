@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/7/16 4:52 PM
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:color="@color/color_transparent_22">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="0dp" />
+            <solid android:color="@color/colorPrimary" />
+            <stroke android:width="0.1sp"
+                android:color="@color/color_transparent_22"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="0dp" />
+            <solid android:color="@color/colorPrimary" />
+            <stroke android:width="0.1sp"
+                     android:color="@color/colorPrimary"/>
+        </shape>
+    </item>
+
+</selector>

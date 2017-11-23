@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/31/16 10:20 AM
+  -->
+
+<resources>
+
+    <!--7E:9D:1F:CC:50:CA:F2:E8:41:3B:55:30:16:34:32:2B:42:B8:F9:83-->
+
+    <!--Facebook App ID-->
+    <string name="facebook_appid"></string>
+
+    <!--Project ID, sender ID-->
+    <string name="gcm_sender_id"></string>
+
+    <!--API Key Server Push notification-->
+    <string name="gcm_apikey"></string>
+
+    <!--API Key Map-->
+    <string name="map_google_api_key"></string>
+</resources>

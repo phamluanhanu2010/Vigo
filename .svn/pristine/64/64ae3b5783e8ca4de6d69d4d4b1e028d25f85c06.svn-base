@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/4/16 1:20 PM
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/CusBase.style.size"
+        android:layout_width="match_parent"
+        android:background="@color/color_gray"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/txt_dialog_edit_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="Chọn thời gian" />
+
+        <ImageView
+            android:id="@+id/img_close_dialog"
+            android:layout_width="@dimen/size_icon_in_app"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_delete" />
+    </LinearLayout>
+
+    <com.strategy.intecom.vtc.vigo.view.custom.calendarview.CustomCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_dialog_edit_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/ripple_selector_yellow_square"
+        android:text="@string/title_dialog_choice" />
+
+</LinearLayout>

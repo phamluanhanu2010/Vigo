@@ -1,0 +1,52 @@
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/31/16 10:17 AM
+  -->
+
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="confirm_ui_button_h">75dp</dimen>
+    <dimen name="confirm_ui_padding_w">18dp</dimen>
+    <dimen name="confirm_ui_padding_h">20dp</dimen>
+    <dimen name="confirm_ui_padding_h_small">21dp</dimen>
+    <dimen name="confirm_ui_button_option">150dp</dimen>
+    <dimen name="confirm_ui_choose_service">230dp</dimen>
+
+    <dimen name="footer_height">75dp</dimen>
+    <dimen name="footer_icon_w_h">35dp</dimen>
+    <dimen name="footer_icon_mar_top">8dp</dimen>
+    <dimen name="footer_title_mar_top">4dp</dimen>
+    <dimen name="footer_text">15sp</dimen>
+
+    <!-- Setting Size for control app -->
+    <dimen name="control_input_text_h">35dp</dimen>
+    <dimen name="size_text_app_content">24sp</dimen>
+    <dimen name="size_text_app_title">26sp</dimen>
+    <!--<dimen name="size_text_app_title">18sp</dimen>-->
+    <dimen name="size_text_app_logo">80sp</dimen>
+    <dimen name="size_text_rating">35sp</dimen>
+
+    <dimen name="splash_loading_w_h">40dp</dimen>
+    <dimen name="splash_loading_mar_bottom">350dp</dimen>
+
+    <!-- Setting Size for icon small in rating bar -->
+    <dimen name="size_icon_in_rating">15dp</dimen>
+
+    <!-- Setting Size for icon small in app -->
+    <dimen name="size_icon_in_app">25dp</dimen>
+
+    <!-- Setting Size for icon small in app -->
+    <dimen name="size_icon_in_app_badges">20dp</dimen>
+
+    <!-- Setting Size for icon large menu in app -->
+    <dimen name="size_icon_in_app_menu">50dp</dimen>
+
+    <!-- Setting Size for Image view page in app -->
+    <dimen name="size_image_view_page">200dp</dimen>
+</resources>

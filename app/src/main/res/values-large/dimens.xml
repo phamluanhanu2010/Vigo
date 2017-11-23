@@ -1,0 +1,50 @@
+<!--
+  ~ Created by Hadvlop@gmail.com on 11/1/16 1:13 PM
+  ~ Copyright © 2016, All Rights Reserved.
+  ~
+  ~ Last modified 10/31/16 10:16 AM
+  -->
+
+<resources>
+    <!--W600dp Nexus 7, Nexus 9, Nexus 10-->
+
+    <dimen name="confirm_ui_button_h">70dp</dimen>
+    <dimen name="confirm_ui_padding_w">13dp</dimen>
+    <dimen name="confirm_ui_padding_h">30dp</dimen>
+    <dimen name="confirm_ui_padding_h_small">18dp</dimen>
+    <dimen name="confirm_ui_button_option">140dp</dimen>
+    <dimen name="confirm_ui_choose_service">200dp</dimen>
+
+    <dimen name="footer_height">70dp</dimen>
+    <dimen name="footer_icon_w_h">38dp</dimen>
+    <dimen name="footer_icon_mar_top">8dp</dimen>
+    <dimen name="footer_title_mar_top">2dp</dimen>
+    <dimen name="footer_text">14sp</dimen>
+
+    <!-- Setting Size for control app -->
+    <dimen name="control_input_text_h">35dp</dimen>
+    <dimen name="size_text_app_content">16sp</dimen>
+    <dimen name="size_text_app_title">18sp</dimen>
+    <!--<dimen name="size_text_app_title">20sp</dimen>-->
+    <dimen name="size_text_app_logo">80sp</dimen>
+    <dimen name="size_text_rating">35sp</dimen>
+
+    <dimen name="splash_loading_w_h">20dp</dimen>
+    <dimen name="splash_loading_mar_bottom">400dp</dimen>
+
+    <!-- Setting Size for icon small in rating bar -->
+    <dimen name="size_icon_in_rating">15dp</dimen>
+
+    <!-- Setting Size for icon small in app -->
+    <dimen name="size_icon_in_app">30dp</dimen>
+
+    <!-- Setting Size for icon small in app -->
+    <dimen name="size_icon_in_app_badges">23dp</dimen>
+
+    <!-- Setting Size for icon large menu in app -->
+    <dimen name="size_icon_in_app_menu">70dp</dimen>
+
+    <!-- Setting Size for Image view page in app -->
+    <dimen name="size_image_view_page">200dp</dimen>
+
+</resources>

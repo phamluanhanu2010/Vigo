@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/lout_container_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_image_view_page"
+            android:orientation="vertical">
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dip"
+                app:fillColor="@color/colorAccent"
+                app:pageColor="@color/white"
+                app:radius="5dp"
+                app:strokeColor="@color/color_app" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title_1"
+                        style="@style/CusTextViewContentTheme"
+                        android:layout_width="match_parent"
+                        android:layout_margin="0dp"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:text="Brief introduction"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txt_description"
+                        style="@style/CusTextViewContentTheme"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginStart="0dp"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="Hanoi has been the capital city of Vietnam for over 1,000 years. It is undoubtedly one of the must-visit locations in Vietnam. Hanoi is the best starting point of your journey in Vietnam for its extremely..."
+                        android:textColor="@color/color_text_title"
+                        android:textSize="@dimen/size_text_app_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lout_container_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CusTextViewTitleTheme"
+                        android:layout_width="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="@string/title_in_travel_1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_text_title"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/CusTextViewTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="@string/title_view_more"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_text_title"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lst_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+
+                <LinearLayout
+                    android:id="@+id/lout_container_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CusTextViewTitleTheme"
+                        android:layout_width="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="@string/title_in_travel_1"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_text_title"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        style="@style/CusTextViewTitleTheme"
+                        android:layout_width="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:ellipsize="end"
+                        android:paddingLeft="@dimen/confirm_ui_padding_w"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="@string/title_view_more"
+                        android:textAllCaps="true"
+                        android:textColor="@color/color_text_title"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lst_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/confirm_ui_padding_w"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/confirm_ui_padding_w"
+        android:paddingLeft="@dimen/confirm_ui_padding_w"
+        android:paddingRight="@dimen/confirm_ui_padding_w"
+        android:paddingStart="@dimen/confirm_ui_padding_w">
+
+        <ImageView
+            android:layout_width="@dimen/control_input_text_h"
+            android:layout_height="@dimen/control_input_text_h"
+            android:src="@mipmap/ic_avatar_default" />
+
+        <EditText
+            style="@style/CusEditTextTheme"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/confirm_ui_padding_h"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+            android:layout_marginRight="@dimen/confirm_ui_padding_h"
+            android:layout_marginStart="@dimen/confirm_ui_padding_h"
+            android:layout_weight="1"
+            android:background="@drawable/border_search_opacity_55"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:gravity="center"
+            android:hint="@string/title_search"
+            android:paddingBottom="3dp"
+            android:paddingEnd="@dimen/confirm_ui_padding_w"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:paddingStart="@dimen/confirm_ui_padding_w"
+            android:paddingTop="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_text_app_content" />
+
+        <ImageView
+            android:layout_width="@dimen/control_input_text_h"
+            android:layout_height="@dimen/control_input_text_h"
+            android:src="@mipmap/ic_location" />
+    </LinearLayout>
+</RelativeLayout>

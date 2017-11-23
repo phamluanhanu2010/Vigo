@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lout_container_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/control_input_text_h"
+            android:layout_height="@dimen/control_input_text_h"
+            android:layout_marginEnd="@dimen/confirm_ui_padding_w"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:layout_marginStart="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_close" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/CusTextViewTitleTheme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="@dimen/confirm_ui_padding_w"
+            android:paddingRight="@dimen/confirm_ui_padding_w"
+            android:singleLine="true"
+            android:textColor="@color/color_text_title" />
+
+        <ImageView
+            android:id="@+id/btn_map_places"
+            android:layout_width="@dimen/control_input_text_h"
+            android:layout_height="@dimen/control_input_text_h"
+            android:layout_marginEnd="@dimen/confirm_ui_padding_w"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_map_place"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lout_container_header"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/img_camera"
+        android:layout_width="@dimen/size_icon_in_app_menu"
+        android:layout_height="@dimen/size_icon_in_app_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/confirm_ui_padding_h"
+        android:layout_marginLeft="@dimen/confirm_ui_padding_h"
+        android:layout_marginStart="@dimen/confirm_ui_padding_h"
+        android:background="@drawable/border_search"
+        android:padding="@dimen/confirm_ui_padding_w"
+        android:src="@mipmap/ic_camera" />
+
+
+</RelativeLayout>

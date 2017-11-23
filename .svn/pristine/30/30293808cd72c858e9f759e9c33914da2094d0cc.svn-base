@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lout_container_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/control_input_text_h"
+            android:layout_height="@dimen/control_input_text_h"
+            android:layout_marginEnd="@dimen/confirm_ui_padding_w"
+            android:layout_marginLeft="@dimen/confirm_ui_padding_w"
+            android:layout_marginRight="@dimen/confirm_ui_padding_w"
+            android:layout_marginStart="@dimen/confirm_ui_padding_w"
+            android:src="@mipmap/ic_close" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_size"
+            android:layout_marginRight="@dimen/padding_size"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/CusTextViewTitleTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_toLeftOf="@+id/tv_audio_time"
+                android:layout_toStartOf="@+id/tv_audio_time"
+                android:background="@android:color/transparent"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/confirm_ui_padding_w"
+                android:paddingRight="@dimen/confirm_ui_padding_w"
+                android:singleLine="true"
+                android:textColor="@color/color_text_title" />
+
+            <TextView
+                android:id="@+id/tv_audio_time"
+                android:layout_width="@dimen/size_icon_in_app_bar"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_audio_state"
+                android:layout_below="@+id/txt_title"
+                android:layout_marginRight="@dimen/padding_size"
+                android:layout_toLeftOf="@+id/img_volume"
+                android:layout_toStartOf="@+id/img_volume"
+                android:gravity="center"
+                android:text="00:00" />
+
+            <TextView
+                android:id="@+id/tv_audio_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/seekbar_audio"
+                android:layout_alignRight="@+id/seekbar_audio"
+                android:layout_below="@+id/seekbar_audio"
+                android:gravity="center"
+                android:textSize="@dimen/size_samll_text_app_content" />
+
+            <SeekBar
+                android:id="@+id/seekbar_audio"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_title"
+                android:layout_toLeftOf="@+id/tv_audio_time"
+                />
+
+            <ImageView
+                android:id="@+id/img_volume"
+                android:layout_width="@dimen/size_icon_in_rating"
+                android:layout_height="@dimen/size_icon_in_rating"
+                android:layout_alignBottom="@+id/tv_audio_time"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_volume" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/lout_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/confirm_ui_choose_service"
+                android:layout_marginBottom="@dimen/confirm_ui_padding_w"
+                android:background="@drawable/ic_main_travel_danang" />
+
+            <LinearLayout
+                android:id="@+id/lout_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_title_1"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="match_parent"
+                    android:layout_margin="0dp"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:text="Brief introduction"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_description"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@android:color/transparent"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:paddingTop="@dimen/confirm_ui_padding_w"
+                    android:text="Hanoi has been the capital city of Vietnam for over 1,000 years. It is undoubtedly one of the must-visit locations in Vietnam. Hanoi is the best starting point of your journey in Vietnam for its extremely..."
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/size_text_app_content" />
+
+                <TextView
+                    android:id="@+id/txt_read_all"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:text="@string/title_read_more"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_marginTop="@dimen/confirm_ui_padding_w"
+                    android:background="@color/color_transparent_22" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_description_full"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_title_full_intro"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="match_parent"
+                    android:layout_margin="0dp"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:text="@string/title_audio_full_intro"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/txt_description_full"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:paddingTop="@dimen/confirm_ui_padding_w"
+                    android:text="Hanoi has been the capital city of Vietnam for over 1,000 years. It is undoubtedly one of the must-visit locations in Vietnam. Hanoi is the best starting point of your journey in Vietnam for its extremely..."
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/size_text_app_content" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lout_download"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/confirm_ui_padding_w"
+                    android:paddingRight="@dimen/confirm_ui_padding_w"
+                    android:paddingTop="@dimen/confirm_ui_padding_w"
+                    android:text="@string/title_detail_guide"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/size_text_app_content" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_icon_in_rating"
+                        android:layout_height="@dimen/size_icon_in_rating"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/small_padding_size"
+                        android:src="@mipmap/ic_download" />
+
+                    <TextView
+                        android:id="@+id/txt_info_audio_guide"
+                        style="@style/CusTextViewContentTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:background="@android:color/transparent"
+                        android:paddingRight="@dimen/confirm_ui_padding_w"
+                        android:paddingTop="@dimen/confirm_ui_padding_w"
+                        android:text="@string/title_architecture_details_download_title"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="@dimen/size_text_app_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.strategy.intecom.vtc.vigo.view.custom.listcontent.ListViewWrapContent
+                android:id="@+id/lst_audio_guild"
+                android:layout_width="match_parent"
+                android:layout_height="500dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_up"
+        android:layout_width="@dimen/size_icon_in_app"
+        android:layout_height="@dimen/size_icon_in_app"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_up"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lout_container_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lout_audio_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_size">
+
+            <ImageView
+                android:id="@+id/img_architecture_avatar"
+                android:layout_width="@dimen/size_icon_in_app_menu"
+                android:layout_height="@dimen/size_icon_in_app_menu"
+                android:layout_gravity="center"
+                android:background="@drawable/img_place_view" />
+
+            <TextView
+                android:id="@+id/tv_audio_description"
+                style="@style/CusTextViewContentTheme"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_layout_menu_app"
+                android:layout_marginRight="@dimen/small_padding_size"
+                android:maxLines="5"
+                android:scrollbars="vertical"
+                android:text="Hanoi has been the capital city of Vietnam for over 1,000 years. It is undoubtedly one of the must-visit locations in Vietnam. Hanoi is the best starting point of your journey in Vietnam for its extremely...Hanoi has been the capital city of Vietnam for over 1,000 years. It is undoubtedly one of the must-visit locations in Vietnam. Hanoi is the best starting point of your journey in Vietnam for its extremely..."
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_icon_in_app_bar"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/size_icon_in_app"
+            android:paddingRight="@dimen/size_icon_in_app">
+
+            <ImageView
+                android:id="@+id/img_previous"
+                android:layout_width="@dimen/size_icon_in_app_badges"
+                android:layout_height="@dimen/size_icon_in_app_badges"
+                android:layout_marginRight="@dimen/control_input_text_h"
+                android:background="@mipmap/ic_previous" />
+
+            <ImageView
+                android:id="@+id/img_replay"
+                android:layout_width="@dimen/size_icon_in_app_badges"
+                android:layout_height="@dimen/size_icon_in_app_badges"
+                android:layout_marginRight="@dimen/control_input_text_h"
+                android:background="@mipmap/ic_replay_left" />
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="@dimen/control_input_text_h"
+                android:layout_height="@dimen/control_input_text_h"
+                android:layout_marginRight="@dimen/control_input_text_h"
+                android:background="@mipmap/ic_play"
+                android:paddingBottom="@dimen/small_padding_size"
+                android:paddingTop="@dimen/small_padding_size" />
+
+            <ImageView
+                android:id="@+id/img_replay2"
+                android:layout_width="@dimen/size_icon_in_app_badges"
+                android:layout_height="@dimen/size_icon_in_app_badges"
+                android:layout_marginRight="@dimen/control_input_text_h"
+                android:background="@mipmap/ic_replay_right" />
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="@dimen/size_icon_in_app_badges"
+                android:layout_height="@dimen/size_icon_in_app_badges"
+                android:background="@mipmap/ic_next" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_marginTop="@dimen/small_padding_size"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/lout_audio_option"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_icon_in_app_menu"
+            android:gravity="center"
+            android:paddingBottom="@dimen/small_padding_size"
+            android:paddingTop="@dimen/small_padding_size">
+
+            <LinearLayout
+                android:id="@+id/lout_speed"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_audio_speed"
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_icon_in_rating"
+                    android:layout_marginLeft="0dp"
+                    android:text="1.0x"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/title_architecture_speed"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_view_article"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="@dimen/size_icon_in_rating"
+                    android:layout_height="@dimen/size_icon_in_rating"
+                    android:layout_marginLeft="0dp"
+                    android:background="@mipmap/ic_article" />
+
+                <TextView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/title_architecture_article_view"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lout_shrink"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="@dimen/size_icon_in_rating"
+                    android:layout_height="@dimen/size_icon_in_rating"
+                    android:layout_marginLeft="0dp"
+                    android:background="@mipmap/ic_down" />
+
+                <TextView
+                    style="@style/CusTextViewContentTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/title_architecture_shrink"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
